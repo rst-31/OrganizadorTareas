@@ -5,11 +5,11 @@ public class PanelIzquierdo extends JPanel {
 
     public PanelIzquierdo(PanelCentral panelCentral) {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
-        setBackground(new Color(80, 75, 220)); // Violeta oscuro
+        setBackground(new Color(80, 75, 220)); //violeta oscuro
 
         add(Box.createRigidArea(new Dimension(0, 20)));
 
-        JLabel lblTitulo = new JLabel("TAREAS");
+        JLabel lblTitulo = new JLabel("Mis Tareas");
         lblTitulo.setForeground(Color.WHITE);
         lblTitulo.setFont(new Font("SansSerif", Font.BOLD, 24));
         lblTitulo.setAlignmentX(CENTER_ALIGNMENT);
@@ -18,7 +18,7 @@ public class PanelIzquierdo extends JPanel {
         add(Box.createRigidArea(new Dimension(0, 30)));
 
         //botón con menú desplegable para ordenar por prioridad
-        JButton btnOrdenarPrioridad = crearBotonMenu("📊 Ordenar por prioridad");
+        JButton btnOrdenarPrioridad = crearBotonMenu("Ordenar por prioridad");
         JPopupMenu menuOrdenar = new JPopupMenu();
 
         JMenuItem altaABaja = crearMenuItem("Alta a baja", panelCentral, true);
@@ -35,9 +35,9 @@ public class PanelIzquierdo extends JPanel {
 
         add(Box.createRigidArea(new Dimension(0, 10)));
 
-        JButton btnCompletadas = crearBotonMenu("✅ Completadas");
-        JButton btnPendientes = crearBotonMenu("🕓 Pendientes");
-        JButton btnTodas = crearBotonMenu("📋 Todas");
+        JButton btnCompletadas = crearBotonMenu("Completadas");
+        JButton btnPendientes = crearBotonMenu("Pendientes");
+        JButton btnTodas = crearBotonMenu("Todas");
 
         btnCompletadas.addActionListener(e -> panelCentral.filtrar("completadas"));
         btnPendientes.addActionListener(e -> panelCentral.filtrar("pendientes"));
@@ -48,7 +48,7 @@ public class PanelIzquierdo extends JPanel {
         add(btnTodas);
         add(Box.createVerticalGlue());
 
-        JButton salir = crearBotonMenu("🚪 Salir");
+        JButton salir = crearBotonMenu("Salir");
         salir.addActionListener(e -> System.exit(0));
         add(salir);
 

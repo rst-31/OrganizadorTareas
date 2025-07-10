@@ -17,9 +17,10 @@ public class PanelCentral extends JPanel {
         setBackground(Color.WHITE);
         setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        // Panel superior con GridBagLayout para mejor control
+        //panel superior con GridBagLayout para mejor control (regilla-filas)
         JPanel panelEntrada = new JPanel(new GridBagLayout());
         panelEntrada.setBackground(Color.WHITE);
+        //posicion dentro del componente
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5);
         gbc.anchor = GridBagConstraints.WEST;
@@ -31,7 +32,7 @@ public class PanelCentral extends JPanel {
         JButton btnEliminar = new JButton("Eliminar");
         JButton btnCompletar = new JButton("Completada");
 
-        //etiqueta "Tarea:"
+        //etiqueta "Tarea"
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.weightx = 0;
@@ -44,7 +45,7 @@ public class PanelCentral extends JPanel {
         gbc.fill = GridBagConstraints.HORIZONTAL;
         panelEntrada.add(txtNombre, gbc);
 
-        //etiqueta "Prioridad:"
+        //etiqueta "Prioridad"
         gbc.gridx = 2;
         gbc.weightx = 0;
         gbc.fill = GridBagConstraints.NONE;
