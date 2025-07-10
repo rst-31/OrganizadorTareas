@@ -31,11 +31,11 @@ Esta es una aplicación de escritorio desarrollada en Java con Swing que permite
 
 ## Estructura del proyecto
 src/
-├── Main.java # Clase principal, ventana principal de la aplicación
-├── Tarea.java # Modelo de datos: representa una tarea
-├── PanelCentral.java # Panel principal donde se agregan, eliminan y muestran tareas
-├── PanelLateral.java # Menú lateral con botones de filtrado
-├── VentanaPrincipal.java # Contenedor de toda la aplicación
+- Main.java # Clase principal, ventana principal de la aplicación
+- Tarea.java # Modelo de datos: representa una tarea
+- PanelCentral.java # Panel principal donde se agregan, eliminan y muestran tareas
+- PanelLateral.java # Menú lateral con botones de filtrado
+- VentanaPrincipal.java # Contenedor de toda la aplicación
 
 ---
 
@@ -49,21 +49,12 @@ La interfaz está dividida en dos secciones:
 
 ---
 
-## ▶️ ¿Cómo ejecutar?
+## ¿Cómo ejecutar?
 
 1. Asegúrate de tener instalado **Java JDK 17 o superior**.
 2. Clona este repositorio o descarga el código fuente.
 3. Compila y ejecuta el archivo `Main.java`:
 
-```bash
-javac Main.java
-java Main
-
-Autores del proyecto:
-	
-	BRAN ELTON DUQUE HERNANDEZ
-	JENNIFER ELIZABETH YEPEZ LOPEZ
-	RODRIGO ENRIQUE DE LEON CUEVAS
  
 
 
