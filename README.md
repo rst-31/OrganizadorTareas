@@ -34,17 +34,29 @@ Java
 
 
 OrganizadorTareas/
+
 ├── .idea/
+
 ├── src/
+
 │   ├── Dashboard.java/
+
 │   ├── Main.java/
+
 │   ├── PanelCentral.java/
+
 │   ├── PanelDerecho.java/
+
 │   ├── PanelIzquierdo.java/
+
 │   └── Tarea.jva/
+
 ├── .gitignore
+
 ├── Proyecto U2.iml
+
 └── README.md
+
 
 
  Contribución
